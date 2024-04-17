@@ -1,0 +1,2 @@
+# RustLearning
+Rust learning notes
