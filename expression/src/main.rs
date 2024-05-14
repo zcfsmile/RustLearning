@@ -60,8 +60,8 @@ fn main() {
             println!("内层循环: {}", inner_count);
             inner_count += 1;
             if inner_count == 3 {
-                // break 'inner;
-                continue 'outer;
+                break 'inner;
+                // continue 'outer;
             }
             if count == 2 {
                 break 'outer;
