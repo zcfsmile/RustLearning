@@ -36,6 +36,4 @@ fn main() {
     println!("g: {}", g); // g: 300
     let h = u8::try_from(d).expect("数值超出了 u8 的范围");
     println!("h: {}", h); // 数值超出了 u8 的范围: TryFromIntError(())
-    
-
 }

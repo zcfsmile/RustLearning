@@ -1,4 +1,3 @@
-workspace = { members = ["error-handling"] }
 [package]
 name = "basic-data-type"
 version = "0.1.0"
