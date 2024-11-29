@@ -8,10 +8,10 @@ fn main() {
     // 生命周期
     {
         let r;
-        {
-            let x = 1;
-            r = &x;
-        }
+        // {
+        let x = 1;
+        r = &x;
+        // }
         assert_eq!(*r, 1);
     }
 }
