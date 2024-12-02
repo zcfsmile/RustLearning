@@ -39,6 +39,16 @@ fn divide(a: i32, b: i32) -> Result<f64> {
 }
 
 fn main() -> Result<()> {
+
+    // JsonError 用例
+    let err = JsonError {
+        message: "Unexpected token".to_string(),
+        line: 10,
+        column: 5
+    };
+    println!("JsonError: {}", err); // JsonError: Unexpected token (10: 5)
+    print!("JsonError: {:?}", err); // JsonError: JsonError { message: "Unexpected token", line: 10, column: 5 }% 
+
     let result = divide(10, 0)?;
     println!("{}", result); // Error: Cannot divide by zero
     Ok(())
