@@ -1,0 +1,8 @@
+[package]
+name = "future-demo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-std = "*"
+surf = "*"
